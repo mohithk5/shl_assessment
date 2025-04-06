@@ -8,3 +8,5 @@ beautifulsoup4
 langchain
 langsmith
 pydantic
+transformers
+einops
