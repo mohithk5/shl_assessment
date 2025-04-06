@@ -11,7 +11,7 @@ from langsmith import traceable
 model = SentenceTransformer("nomic-ai/nomic-embed-text-v1",trust_remote_code=True)
 
 catalog = pd.read_csv("data.csv")
-embeddings = torch.load("embeddings.pth")
+embeddings = torch.load("embeddings.pth",weights_only = False)
 
 handler = ConsoleCallbackHandler() 
 
